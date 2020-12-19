@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+}
+
+main {
+  font-weight: 300;
+}
+
+.main-bg {
+  position: relative;
+  overflow: hidden; 
+  height: 100vh;
+  background: rgb(0,254,255);
+  background: -moz-linear-gradient(90deg, rgba(0,254,255,1) 0%, rgba(0,162,240,1) 20%, rgba(0,67,248,1) 40%, rgba(154,0,255,1) 60%, rgba(255,0,185,1) 80%, rgba(255,0,0,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(0,254,255,1) 0%, rgba(0,162,240,1) 20%, rgba(0,67,248,1) 40%, rgba(154,0,255,1) 60%, rgba(255,0,185,1) 80%, rgba(255,0,0,1) 100%);
+  background: linear-gradient(90deg, rgba(0,254,255,1) 0%, rgba(0,162,240,1) 20%, rgba(0,67,248,1) 40%, rgba(154,0,255,1) 60%, rgba(255,0,185,1) 80%, rgba(255,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00feff",endColorstr="#ff0000",GradientType=1);
+  color: #FFF;
+}
+
+.container {
+  max-width: 90%;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.site-header {
+  background-color: rgba(255, 255, 255, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  text-decoration: none;
+  font-weight: 300;
+  transition: color .15s ease-in-out;
+}
+.site-header a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
